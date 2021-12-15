@@ -2,7 +2,7 @@
 
 Based on this aticle https://github.com/CanUnesi/QMK-on-K6
 
-![](https://github.com/netzen86/keychronK2_qmk/img/chip.jpg)
+![](https://raw.githubusercontent.com/netzen86/keychronK2_qmk/main/img/chip.jpg)
 
 
 On my version board MCU is blank no serial number. Flashing keyboard on your risk.
