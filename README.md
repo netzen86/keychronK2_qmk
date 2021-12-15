@@ -21,21 +21,25 @@ util/qmk_install.sh
 ## 5. Install gcc 
 brew install --cask gcc-arm-embedded 
 
-## 5. Make default firmware
-make keychron/k2:default
+## 6. Make firmware
+Change keymap in key board directory qmk_firmware/keyboards/keychron/k2/keymaps
+Copy default folder for new name and 
+
+make keychron/k2:(yourname)
+
+https://docs.qmk.fm/#/keycodes_basic
+
 
 Compiled firmware in *qmk_firmware* directory  
 
-## 6. Get Sonix Flasher
+## 7. Get Sonix Flasher
 https://github.com/SonixQMK/sonix-flasher/releases
 
 download flasher-mac.dmg
 
-## 7. Use the 2-position switch to put the keyboard into wired mode
-
 ## 8. Enter Boot Mode
 
-Remove the spacebar. Using a conductor, such as a control pen or a tweezer or clip, touch the two boot pins in the image below. While shorting the pins, plug in the keyboard.
+Remove the spacebar. Using a conductor, such as a control pen or a tweezer or clip, touch the two boot pins in the image below. 
 
 ![](https://raw.githubusercontent.com/netzen86/keychronK2_qmk/main/img/boot_pins.jpg)
 
@@ -44,14 +48,7 @@ Remove the spacebar. Using a conductor, such as a control pen or a tweezer or cl
 Radio button "qmk offset" did not fit, increase the size of the window.
 ![](https://raw.githubusercontent.com/netzen86/keychronK2_qmk/main/img/sonixflash1.jpg)
 
-## 10. Plug bord on mac book
+## 10. Plug board on macbook
 Press refresh buttton. Make sure you have picked SN32F24x for the device and 0x00 for qmk offset.
 
 ## 11. This is the point of no return, click “Flash QMK…” and choose the .bin file you created in *qmk_firmware* directory. It will flash as soon as you choose the file.
-
-## 12. Change keymap in key board directory 
-qmk_firmware/keyboards/keychron/k2/keymaps
-
-Copy defaul folder for new name and make keychron/k2:(yourname)
-
-https://docs.qmk.fm/#/keycodes_basic
